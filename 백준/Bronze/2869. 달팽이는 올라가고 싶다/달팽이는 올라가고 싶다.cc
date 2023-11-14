@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+	int a, b, v;
+	cin >> a >> b >> v;
+
+	// 7 3 15
+	if ((v - a) % (a - b) == 0) {
+		cout << (v - a) / (a - b) + 1;
+	}
+	else {
+		cout << (v - a) / (a - b) + 2;
+	}
+
+	return 0;
+}
